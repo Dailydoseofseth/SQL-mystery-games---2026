@@ -32,6 +32,24 @@ WHERE person.id = 14887 OR person.id = 16371;
 
 
 ...
+-- THE FIRST 48 -- clock's-a-tickin'....................... >>>
+
+SELECT *
+FROM get_fit_now_member
+WHERE id LIKE '48Z%'
+AND membership_status = 'gold';
+
+SELECT *
+FROM person
+WHERE id = 28819;
+
+SELECT *
+FROM person
+WHERE id = 67318;
+
+SELECT *
+FROM drivers_license
+WHERE plate_number LIKE '%H42W%';
 
 -- SELECT DISTINCT city 
 -- FROM crime_scene_report 
