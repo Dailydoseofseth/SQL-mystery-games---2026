@@ -51,6 +51,23 @@ SELECT *
 FROM drivers_license
 WHERE plate_number LIKE '%H42W%';
 
+-----
+INSERT INTO solution VALUES (1, 'Jeremy Bowers');
+
+SELECT value FROM solution;
+
+SELECT *
+FROM person
+WHERE name = 'Jeremy Bowers';
+
+SELECT *
+FROM interview
+WHERE person_id = 67318;
+
+
+
+
+
 -- SELECT DISTINCT city 
 -- FROM crime_scene_report 
 -- WHERE city LIKE 'I%';
