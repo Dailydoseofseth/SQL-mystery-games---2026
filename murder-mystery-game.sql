@@ -1,20 +1,15 @@
 -- Record your SQL detective process here!  Write down: 
 --   1. The SQL queries you ran
               
-SELECT id 
-FROM person
-WHERE address_street_name = 'Northwestern Dr';
-
-SELECT count(*)
-FROM person;
+SELECT * FROM crime_scene_report 
+WHERE type = 'murder' 
+AND city = 'SQL City';
 
 SELECT *
 FROM crime_scene_report
 WHERE date = 20180115
 AND city = 'SQL City'
 AND type = 'murder';
-
-SELECT * FROM person LIMIT 10;
 
 SELECT * FROM person
 WHERE address_street_name = 'Northwestern Dr'
