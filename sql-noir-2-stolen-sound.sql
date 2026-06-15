@@ -19,3 +19,23 @@
 
 -----------ORIGINAL ANSWER/S--------------
 
+SELECT * FROM crime_scene
+WHERE type = 'theft'
+AND date = 19830715;
+
+SELECT *
+FROM witnesses
+WHERE crime_scene_id = 65;
+
+SELECT * 
+FROM suspects
+WHERE bandana_color = 'red'
+AND accessory = 'gold watch';
+
+SELECT * 
+FROM interviews
+WHERE suspect_id IN (35, 44, 97);
+
+SELECT * 
+FROM suspects
+WHERE id = 97;
