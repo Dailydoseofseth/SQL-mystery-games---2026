@@ -14,7 +14,7 @@
 -- 3.
 -- Verify the suspect using their interview transcript.
 
----------------------
+---------------------ORIGINAL ANSWER/S---------------------
 SELECT * FROM crime_scene
 WHERE type = 'theft';
 
@@ -37,6 +37,7 @@ WHERE suspect_id IN (3, 183);
 SELECT *
 FROM suspects
 WHERE id = 183;
+
 
 
 ------------ADVANCED EVIDENCE to show all corrobarating evidence--------------
