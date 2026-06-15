@@ -37,3 +37,16 @@ WHERE suspect_id IN (3, 183);
 SELECT *
 FROM suspects
 WHERE id = 183;
+
+
+------------ADVANCED EVIDENCE to show all corrobarating evidence--------------
+
+SELECT 
+  suspects.name,
+  suspects.attire,
+  suspects.scar,
+  interviews.transcript
+FROM suspects
+JOIN interviews
+ON suspects.id = interviews.suspect_id
+WHERE suspects.id = 183;
